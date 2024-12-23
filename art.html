@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>alone in a taxicab in a snowing foreign country at 3 in the morning</title>
+		<meta charset="UTF-8">
+     <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+		<h1 id="header" style="margin-bottom: 10px;"><em></em></h1> 
+		<div style="position:relative; width:1025px;">
+<script>  const textSelect= [
+   `But then he wondered if, realistically, this was his life.`,
+    `Prehaps I could've been free.`,
+    `I'm of age but have no children; no quarter phone booth calls to home`,
+    `Please take care of your health. Your future self is waiting for you.`,
+    `Anything as universal as death is a blessing to me`,
+    `This is how they come to determine our life, our death our rebirth.`,
+    `Again and again I will suffer; again and again I will get back on my feet.`,
+    `The earth was hungry, so it ate some people.`,
+    `Life is cheap--death is free! Act now! Supplies are limited! (Offer void in Arizona)`
+
+  ];
+   
+  function getRandomText() {
+      const randomIndex = Math.floor(Math.random() * textSelect.length);
+      return textSelect[randomIndex];
+    }
+   
+  function loadText() {
+    const myDiv = document.getElementById('header');
+    myDiv.innerHTML= getRandomText();
+  }
+   
+  window.onload = loadText;</script>
+<div style="position:absolute; width:160px; left:0; top:0;">
+				<nav class="infobox" style="width:110px;">
+					<h2>MAP</h2>
+					<br><a href="index.html">Home</a> 
+					<br><a href="journal.html">Journal</a>
+					<br><a href="now.html">Now</a>
+					<br><a href="art.html">Art</a>
+					<br><a href="contact.html">Contact</a>
+                    <br><a href="https://landville.nekoweb.org/fga.txt">Frequently Given Answers</a>
+					<br><a href="music.html">Music</a>
+					<br><a href="movies.html">Movies</a>
+					<br><a href="outgoing.html">Outgoing Links</a>
+                    <br><a href="friends.html">Friends</a>
+					<br><a href="https://landville.atabook.org">Guestbook</a>
+					<br><a href="kindwords.html">Kind Words</a>
+
+                    <br><br>
+                    <a>inspired by <a href="https://dogspit.nekoweb.org">dogspit</a> and <a href="https://bitterfilms.com">don hertzfeldt</a>
+				</nav>
+				<div style="width:130px;">
+					<center></center>
+				</div>
+				<div class="infobox" style="width:110px;">
+					<center>
+						My current weather:
+                            <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>        
+                            <p id="temperature">Loading...</p>
+                        <p id="condition"></p>
+					</center>
+                    <script>const username = "landville"; // UNLESS YOU HAVE A CUSTOM DOMAIN, Put your Nekoweb username here as a string
+
+                        if (username === undefined && window.location.href.includes(".nekoweb.org")) {
+                          // if we know the site has a subdomain, we can use that as the username instead
+                          username = window.location.host.split(".")[0];
+                        }
+                        
+                        const getStats = async () => {
+                            const request = await fetch(`https://nekoweb.org/api/site/info/${username}`);
+                            const json = await request.json();
+                        
+                            const updated = new Date(json.updated_at).toLocaleDateString(); // Formats Last Updated text
+                            const created = new Date(json.created_at).toLocaleDateString(); // Formats Creation Date text
+                        
+                            document.getElementById("created").innerHTML = `<em>created</em>: ${created}`;
+                            document.getElementById("updated").innerHTML = `<em>updated</em>: ${updated}`;
+                            document.getElementById("visitors").innerHTML = `<em>visits</em>: ${json.views}`;
+                            document.getElementById("followers").innerHTML = `<em>followers</em>: ${json.followers}`;
+                        };
+                        getStats();</script>
+                        <script>
+                
+                            const apiKey = "d84e086d4bb3408b8cb225650241811";
+                            const city = "Columbus";
+                            const country = "US";
+                            const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city},${country}`;
+                            
+                            async function fetchWeather() {
+                                try {
+                                    const response = await fetch(apiUrl);
+                                    if (!response.ok) throw new Error("Failed to fetch weather data");
+                                    const data = await response.json();
+                            
+                                    const temperature = data.current.temp_f; 
+                                    const condition = data.current.condition.text;
+                            
+                                    document.getElementById("temperature").textContent = `${temperature}°F`;
+                                    document.getElementById("condition").textContent = ` ${condition}`;
+                                } catch (error) {
+                                    console.error("Error fetching weather data:", error);
+                                    document.getElementById("temperature").textContent = "error fetching weather data; javascript may be off";
+                                }
+                            }
+                            
+                            fetchWeather();
+                            
+                                </script>
+				</div>
+</div>
+            <div class="infobox" style="width:640px; margin-left:160px; margin-bottom: 15px; height:500px; overflow:auto;">
+            		<h2>art</h2>
+            		<img src="https://landville.nekoweb.org/img%2Fart/hi.jpg">
+                           		<img src="https://landville.nekoweb.org/img%2Fart/sleep.jpg" >
+<img src="https://landville.nekoweb.org/img%2Fart/zee.jpg">
+<img src="https://landville.nekoweb.org/img%2Fart/hjkhk.png"width="300px">
+<img src="https://landville.nekoweb.org/img%2Fart/2024_12_13_0xv_Kleki.png"width="300px">
+                <img src="https://landville.nekoweb.org/img%2Fart/Untitled7.jpg">
+
+            </div>
+<div style="position:absolute; width:160px; right:0; top:0;">
+				<div class="infobox" style="width:120px; margin-left: -15px;">
+					<center>
+						<h3>RSS</h3>
+						<p>]][][[]][][[]][[]] will talk to you PERSONALLY through RSS!                        </p>
+						<a href="https://landville.nekoweb.org/RSS.xml"><img src="https://landville.nekoweb.org/img/arr.png" alt="arrow" style="width: 100px;"></a>
+					</center>
+				</div>
+                <div class="infobox" style="width:120px; min-height:140px; margin-left: -15px;">
+                    <center><h3>STATISTICS</h3>
+<p id="created"><em>Created</em>: 0</p>
+<p id="updated"><em>Updated</em>: 0</p>
+<p id="visitors"><em>Visits</em>: 0</p>
+<p id="followers"><em>Followers</em>: 0</p>
+ stats made with     <a href="https://maxpixels.moe/resources/nekoweb-stats/">nekoweb stats</a><br><br>
+ <a href="https://nekoweb.org/"><img src="https://nekoweb.org/assets/buttons/button9.gif"></a><!-- button by fujoshi.nekoweb.org -->
+</center>
+    </div>
+        </div>
+                </div>
+               
+   
+
+
+
+        
+        
+        
+        
+        
+    
+</body></html>

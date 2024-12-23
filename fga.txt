@@ -1,0 +1,20 @@
+- Yes
+- My reply is no
+- Signs point to yes
+- Outlook good
+- Cannot predict now
+- Outlook not so good
+- Very doubtful
+- Without a doubt
+- It is decidedly so
+- Don’t count on it
+- Ask again later
+- Better not tell you now
+- Reply hazy, try again
+- Yes definitely
+- You may rely on it
+- It is certain
+- Concentrate and ask again
+- My sources say no
+- Most likely
+- As I see it, yes

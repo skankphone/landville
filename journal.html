@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>alone in a taxicab in a snowing foreign country at 3 in the morning</title>
+		<meta charset="UTF-8">
+     <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+		<h1 id="header" style="margin-bottom: 10px;"><em></em></h1> 
+		<div style="position:relative; width:1025px;">
+<script>  const textSelect= [
+   `But then he wondered if, realistically, this was his life.`,
+    `Prehaps I could've been free.`,
+    `I'm of age but have no children; no quarter phone booth calls to home`,
+    `Please take care of your health. Your future self is waiting for you.`,
+    `Anything as universal as death is a blessing to me`,
+    `This is how they come to determine our life, our death our rebirth.`,
+    `Again and again I will suffer; again and again I will get back on my feet.`,
+    
+    `The earth was hungry, so it ate some people.`,
+    `Life is cheap--death is free! Act now! Supplies are limited! (Offer void in Arizona)`
+
+  ];
+   
+  function getRandomText() {
+      const randomIndex = Math.floor(Math.random() * textSelect.length);
+      return textSelect[randomIndex];
+    }
+   
+  function loadText() {
+    const myDiv = document.getElementById('header');
+    myDiv.innerHTML= getRandomText();
+  }
+   
+  window.onload = loadText;</script>
+<div style="position:absolute; width:160px; left:0; top:0;">
+				<nav class="infobox" style="width:110px;">
+					<h2>MAP</h2>
+					<br><a href="index.html">Home</a> 
+					<br><a href="journal.html">Journal</a>
+					<br><a href="now.html">Now</a>
+					<br><a href="art.html">Art</a>
+					<br><a href="contact.html">Contact</a>
+                    <br><a href="https://landville.nekoweb.org/fga.txt">Frequently Given Answers</a>
+					<br><a href="music.html">Music</a>
+					<br><a href="movies.html">Movies</a>
+					<br><a href="outgoing.html">Outgoing Links</a>
+                    <br><a href="friends.html">Friends</a>
+					<br><a href="https://landville.atabook.org">Guestbook</a>
+					<br><a href="kindwords.html">Kind Words</a>
+                    <br><br>
+                    <a>inspired by <a href="https://dogspit.nekoweb.org">dogspit</a> and <a href="https://bitterfilms.com">don hertzfeldt</a>
+				</nav>
+				<div style="width:130px;">
+					<center></center>
+				</div>
+				<div class="infobox" style="width:110px;">
+					<center>
+						My current weather:
+                            <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>        
+                            <p id="temperature">Loading...</p>
+                        <p id="condition"></p>
+					</center>
+                    <script>const username = "landville"; // UNLESS YOU HAVE A CUSTOM DOMAIN, Put your Nekoweb username here as a string
+
+                        if (username === undefined && window.location.href.includes(".nekoweb.org")) {
+                          // if we know the site has a subdomain, we can use that as the username instead
+                          username = window.location.host.split(".")[0];
+                        }
+                        
+                        const getStats = async () => {
+                            const request = await fetch(`https://nekoweb.org/api/site/info/${username}`);
+                            const json = await request.json();
+                        
+                            const updated = new Date(json.updated_at).toLocaleDateString(); // Formats Last Updated text
+                            const created = new Date(json.created_at).toLocaleDateString(); // Formats Creation Date text
+                        
+                            document.getElementById("created").innerHTML = `<em>created</em>: ${created}`;
+                            document.getElementById("updated").innerHTML = `<em>updated</em>: ${updated}`;
+                            document.getElementById("visitors").innerHTML = `<em>visits</em>: ${json.views}`;
+                            document.getElementById("followers").innerHTML = `<em>followers</em>: ${json.followers}`;
+                        };
+                        getStats();</script>
+                        <script>
+                
+                            const apiKey = "d84e086d4bb3408b8cb225650241811";
+                            const city = "Columbus";
+                            const country = "US";
+                            const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city},${country}`;
+                            
+                            async function fetchWeather() {
+                                try {
+                                    const response = await fetch(apiUrl);
+                                    if (!response.ok) throw new Error("Failed to fetch weather data");
+                                    const data = await response.json();
+                            
+                                    const temperature = data.current.temp_f; 
+                                    const condition = data.current.condition.text;
+                            
+                                    document.getElementById("temperature").textContent = `${temperature}°F`;
+                                    document.getElementById("condition").textContent = ` ${condition}`;
+                                } catch (error) {
+                                    console.error("Error fetching weather data:", error);
+                                    document.getElementById("temperature").textContent = "error fetching weather data; javascript may be off";
+                                }
+                            }
+                            
+                            fetchWeather();
+                            
+                                </script>
+				</div>
+</div>
+            <div class="infobox" style="width:640px; margin-left:160px; margin-bottom: 15px; height:500px; overflow:auto;">
+            	
+            		<h3>ENTRY 12.19.24</h3>
+            	                <hr width="50%" align="left" color="blue" size="1px"/>
+            	                <p>went to psychology; got off of zoloft and now i'm on prozac. hopefully that helps. my parents have a visit with my therapist tommorrow. finished midterms..i quite like being alive even though it is hard</p>
+            		<h3>ENTRY 12.17.24</h3>
+            	                <hr width="50%" align="left" color="blue" size="1px"/>
+            	                <p>stessful. my friend got mad because he is infatuated / hyperfixated on shootings and my other friend dislikes how he constantly talks about it. he is also mean so my friend got mad about that. i tried to be nice but he wouldnt listen. i feel really bad. then i can only take 1/2 of my zoloft pill now because it feels like it makes my intrusive thoughts worse. my head hurts </p>
+            		<h3>ENTRY 12.16.24</h3>
+            	                <hr width="50%" align="left" color="blue" size="1px"/>
+<p>This picture of me was taken when I was in heaven. It was fun. I was  bathed in a golden light the whole time. They gave me this suit to wear,  but I had to give it back the same day.
+I am meant to return back to heaven. My duties have been dealt with, and the body is meant to return to its rightful owner. I am prevented from doing that.</p>               
+           
+            		<h3>ENTRY 12.12.24</h3>
+            	                <hr width="50%" align="left" color="blue" size="1px"/>
+<p>went to therapy. did OCD screening. aligned with most of the obsessive/compulsive things. we didnt finish it sadly because its really long, its called the idea box i think? im taking the full zoloft pill now, and im not feeling much. i got to keep this emotion sheet i got. I got my site's RSS in the feed. it's been a month since the day i was supposed to kill myself</p>
+                   <h3>ENTRY 12.4.24</h3>
+                <hr width="50%" align="left" color="blue" size="1px"/>
+<p> new site layout is out: it is heavily inspired by dogspit (its like my old one but it resembles theirs more, because it's cleaner) and i hope they're OK with it; i went to therapy and got perscribed zoloft and some other pill i can't pronounce the name of that i take that'll make me sleepy if i get anxious, so i need to sign a form to bring that to school; i ALSO need to get a 504 plan in place. so much work. she says i have obsessive symptoms, possible autism and GAD. i think i have to go to a neuropsychologist  to look into the OCD or autism i forgot</p>
+                <h3>ENTRY 12.2.24</h3>
+		<hr width="50%" align="left" color="blue" size="1px"/>
+		<p></p>she says i have to go to psychology on wednesday to rule out OCD and psychosis. i talked to her more and she says a lot of my problems i have/used to have align with OCD. i think ill do a screening with that appointment too. i dont understand much of what happens... i suppose i love this life,
+in spite of my clenched fist.</p>
+		<p></p>
+		<h3>ENTRY 12.1.24</h3>
+		<hr width="50%" align="left" color="blue" size="1px"/>
+		<p>got into nekolink! + working on new pages. therapy tommorrow. i put music on my ps vita so i can listen while i drive there</p>
+		<h3>ENTRY 11.30.24</h3>
+						<hr width="50%" align="left" color="blue" size="1px"/>
+<p>and the hammer of time smashes my body like glass in a paper bag</p>
+						<h3>ENTRY 11.28.24</h3>
+
+				<hr width="50%" align="left" color="blue" size="1px"/>
+		<p>happy thanksgiving! i have a small section of family who i see. immediate family who i see all the time.
+		i forgot to write an entry yesterday, but i went to therapy. i have two appointments next week; one on Monday for therapy and one on Wednesday for psychology.
+		i may also get diagnosed with autism in a while, and i have to do this other thing which i forgot the name of. i only remember the discussion about if Medicare would cover it.
+		on that topic, i got a new caresource card. ohioRISE or something. hopefully that pays it because i don't want to be a burden. stars look like holes in the floor of heaven to me;; people are scared of dying but anything as universal as death is a blessing to me. have a good evening, hopefully your family won't bicker when you're eating today! </p>
+		<h3>ENTRY 11.26.24</h3>
+		<hr width="50%" align="left" color="blue" size="1px"/>
+		<p>shot down in the glory of my prime; only to find the bullets were divine</p>
+		<h3>ENTRY 11.25.24</h3>
+		<hr width="50%" align="left" color="blue" size="1px"/>
+		<p>you can't waste all of your time critiquing things without realizing at some point that we as humans aren't built around critque and analysis; but upon raw creative force. at some point you have to ask yourself: have i made anything beautiful? creating things requires being raw and vulnerable, critiquing doesn't;; it doesn't matter how good you are at something, if you've never bared your soul in front of an audience ........ i am exhausted from constant debates and critiques, i just want to make something that is delightful and generates LOVE. you need to think: when you die, will the world be a more beautiful place after your life or a more disgusting place? think about your residue!!! aghhhhhh!!!!!!!! i am mad today</p>
+		
+		<h3>ENTRY 11.24.24</h3>
+		<hr width="50%" align="left" color="blue" size="1px"/>	<P>assortment of thoughts: sometimes, in the dead of the night, i swear the joy from my old voice , and the cadence it used to have still prances around the house, desperate to find its way back to it's owner..
+i really hope people will think highly of me when they see me nude. they already sexualize me a lot. losing myself in my own consciousness helps to get over it. i feel filthy anyway, it is impossible to get myself clean from their lust. is it lust or just a joke people do to mess with my fragile brain? i hope they die in a dumb way. drive off a bridge, choke on their own vomit after drinking too much. they don’t deserve to die in peace.
+have a good one, friends</P>
+		<h3>ENTRY 11.23.24</h3>
+		<hr width="50%" align="left" color="blue" size="1px"/>
+		<p>greetings. i have learned more about my family. i think they don't like telling me because they think it'll make my face turn ugly and pinched. iam very open to conversation, but things have been rough so i think they don't wanna hurt me. i went on a long walk. i get hysteric, it's as though it's coming from the fabric of reality, iridescent and thick; similar to an oil spill. the details in sidewalks vibrate something deep within me that only started happening recently. details in beautiful brick walls and weeds that others rip out and throw out ;;; the air smells different nowadaus</p>
+		<h3>ENTRY 11.22.24</h3>
+		<hr width="50%" align="left" color="blue" size="1px"/>
+		<p>the lights of the city blink like thousands of little eyes, watching and waiting. i really only go to the city for therapy nowadays. it's been going well. my therapist says i have anxiety and depression. she also says i will need to see a psychologist to see if i have psychosis. my last meeting with her was on tuesday. my next is wednesday, the day before thanksgiving. that's my last with her. then i see my psychologist on december 4th. hopefully i can find what i'm looking for. sometimes i yearn for the warmth of another body, and my mind goes blissfully blank.</p>
+		<h3>ENTRY 11.21.24</h3>
+		<hr width="50%" align="left" color="blue" size="1px" />
+		<p>people are trying to get things sorted out with me, and to find what is   exactly WRONG with me. i am not too sure either. i want to join the rest of the world so badly. maybe i don't need it. i like walking and talking to people but lots of people have this weird aggressive disposition? </p><br>
+		<h3>ENTRY 11.18.24</h3>
+		<hr width="50%" align="left" color="blue" size="1px" />
+		<p>
+			i've heard that when greyhounds retire, after spending their whole
+			youth racing at the dog tracks, they become monstrous couch
+			potatoes. you can never get them to race again, and you practically
+			have to drag them outside just to take a walk. lately i feel like a
+			retired greyhound
+		</p>
+
+                </center>
+               
+                
+
+            </div>
+<div style="position:absolute; width:160px; right:0; top:0;">
+				<div class="infobox" style="width:120px; margin-left: -15px;">
+					<center>
+						<h3>RSS</h3>
+						<p>]][][[]][][[]][[]] will talk to you PERSONALLY through RSS!                        </p>
+						<a href="https://landville.nekoweb.org/RSS.xml"><img src="https://landville.nekoweb.org/img/arr.png" alt="arrow" style="width: 100px;"></a>
+					</center>
+				</div>
+                <div class="infobox" style="width:120px; min-height:140px; margin-left: -15px;">
+                    <center><h3>STATISTICS</h3>
+<p id="created"><em>Created</em>: 0</p>
+<p id="updated"><em>Updated</em>: 0</p>
+<p id="visitors"><em>Visits</em>: 0</p>
+<p id="followers"><em>Followers</em>: 0</p>
+ stats made with     <a href="https://maxpixels.moe/resources/nekoweb-stats/">nekoweb stats</a><br><br>
+ <a href="https://nekoweb.org/"><img src="https://nekoweb.org/assets/buttons/button9.gif"></a><!-- button by fujoshi.nekoweb.org -->
+</center>
+    </div>
+        </div>
+                </div>
+               
+   
+
+
+
+        
+        
+        
+        
+        
+    
+</body></html>
